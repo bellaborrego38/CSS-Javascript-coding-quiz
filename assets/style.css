@@ -17,15 +17,25 @@ body {
 .info_box,
 .quiz_box,
 .result_box {
-outline: none;
 position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+transition: all 0.3 ease;
+}
+
+.info_box.activeInfo,
+.quiz_box.activeQuiz,
+.result_box.activeResult {
+    z-index: 5;
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 
 .start_btn button { 
+    
     font-size: 25px;
     font-weight: 500;
     color:blanchedalmond;
@@ -38,10 +48,13 @@ transform: translate(-50%, -50%);
 }
 
 .info_box {
-   display:block;
    width: 540px;
    background:rgb(109, 71, 71);
    border-radius: 5px;
+   opacity: 0;
+   pointer-events: none;
+   transform: translate(-50%, -50%) scale(0.9);
+
 }
 
 .info_box .info_title {
@@ -79,6 +92,7 @@ transform: translate(-50%, -50%);
     margin: 0 5px;
     height: 40px;
     width: 100px;
+    outline: none;
     border: 1px solid  #bb8588;
     background: black;
     color:  #bb8588;
@@ -114,10 +128,12 @@ transform: translate(-50%, -50%);
 
 
 .quiz_box {
-   display:none;
     width: 550px;
     background: white;
     border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform:e translate(-50%, -50%) scale(0.9);
 
 }
 
@@ -235,17 +251,27 @@ section .option_list .option:hover {
 
 
 
-.option_list .option .icon.tick {
+.option_list .option.correct {
     color: green;
     border-color: green;
     background: green;
+
 }
 
-.option_list .option .icon.cross {
+.option_list .option.incorrect{
     color: red;
     background: pink;
     border-color: red;
 }
+
+
+
+.options_list .option.disabled{
+
+pointer-events: none;
+
+}
+
 
 .quiz_box footer {
     height: 60px;

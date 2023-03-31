@@ -47,37 +47,21 @@
 
             <div class="quiz_box">
                 <header>
-                    <div class="title">Questions</div>
+                    <div class="title"></div>
                     <div class="timer">
                         <div class="timer_text">Seconds Left</div>
-                        <div class="timer_sec">30</div>
+                        <div class="timer_sec">15</div>
                     </div>
+                    <div class="que_text"></div>
                 </header>
                 <section>
                     <div class="que_text">
-                        <span>What is a local variable?</span>
+                        <span></span>
                     </div>
 
                     <div class="option_list">
-                        <div class="option">
-                            <span>A variable that is declared outside a function</span>
-                            <div class="icon tick"><i class="fas fa-times"></i></div>
-                        </div>
-
-                        <div class="option">
-                            <span>An element</span>
-                            <div class="icon cross"><i class="fas fa-times"></i></div>
-                            </div>
-
-                            <div class="option">
-                                <span>A variable that is declared inside a function</span>
-                                <div class="icon"><i class="fas fa-check"></i></div>
-                                </div>
-
-                                <div class="option">
-                                    <span>A function</span>
-                                    <div class="icon cross"><i class="fas fa-times"></i></div>
-                                </div>
+                         <div class="option">
+                        
                         </div>
                     </section>
 
@@ -87,17 +71,20 @@
                             </div>
                             <button class="next_btn">Next</button>
                         </footer>
-
                     </div>
-                </div>
+                
 
                 <div class="result_box">
                     <div class="icon">
-                        <i class="fas fa-crown"></i>
+                       
 
                     </div>
                     <div class="complete_text">You've completed the quiz!</div>
                     <div class="score_text">
+                        
+                            <input id="user-input" placeholder="initials"/>
+
+                        
                         <span>You got <p>2</p> out of <p>5</p></span>
                     </div>
                     <div class="buttons">
@@ -162,7 +149,7 @@
 
     </div>
 
-
+    <script src="./js/questions.js"></script>
     <script src="./js/script.js"></script>
 
 </body>
