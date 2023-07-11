@@ -1,7 +1,7 @@
 
 
 * {
-    border: 1px solid white;
+    /* border: 1px solid white; */
      margin: 0;  
     padding: 0;
     box-sizing: border-box;
@@ -68,12 +68,12 @@ transition: all 0.3 ease;
 }
 
 .info_box .info_list {
+    font-size:30px ;
     padding: 15px 35px;
 
 }
 
 .info_box .info_list .info span {
-    font-weight: 600;
     color:  #bb8588;
 
 }
@@ -96,7 +96,7 @@ transition: all 0.3 ease;
     border: 1px solid  #bb8588;
     background: black;
     color:  #bb8588;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 500;
     cursor: pointer;
     transition: 1s ease;
